@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>417372339956-10vokr3puvm0m8umkvr1vetd903u0p08.apps.googleusercontent.com</string>
+	<string>78193770395-psho1k2nlbjjs8r5b21ng6877pbrpr75.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.417372339956-10vokr3puvm0m8umkvr1vetd903u0p08</string>
+	<string>com.googleusercontent.apps.78193770395-psho1k2nlbjjs8r5b21ng6877pbrpr75</string>
 	<key>API_KEY</key>
-	<string>AIzaSyD4tAxGM-ZR0WmSjVKd9RxqxCxId7e1NXg</string>
+	<string>AIzaSyD1O4g7ETFWF8rxfVRf_Y4-qB4oCl3QMZI</string>
 	<key>GCM_SENDER_ID</key>
-	<string>417372339956</string>
+	<string>78193770395</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.george.AustinForVeteransStartupWeekend</string>
+	<string>com.george.AustinInstitutions</string>
 	<key>PROJECT_ID</key>
-	<string>austinforveteransstartup</string>
+	<string>austininstitutions</string>
 	<key>STORAGE_BUCKET</key>
-	<string>austinforveteransstartup.appspot.com</string>
+	<string>austininstitutions.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:417372339956:ios:44a9d099827485ea</string>
+	<string>1:78193770395:ios:35439c3c75c2e435</string>
 	<key>DATABASE_URL</key>
-	<string>https://austinforveteransstartup.firebaseio.com</string>
+	<string>https://austininstitutions.firebaseio.com</string>
 </dict>
 </plist>

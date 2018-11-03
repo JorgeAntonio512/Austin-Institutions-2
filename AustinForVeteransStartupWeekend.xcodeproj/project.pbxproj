@@ -21,7 +21,7 @@
 		3D83B61A215FE15A00C68F56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D83B618215FE15A00C68F56 /* LaunchScreen.storyboard */; };
 		3D83B625215FE15A00C68F56 /* AustinForVeteransStartupWeekendTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83B624215FE15A00C68F56 /* AustinForVeteransStartupWeekendTests.swift */; };
 		3D83B630215FE15A00C68F56 /* AustinForVeteransStartupWeekendUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83B62F215FE15A00C68F56 /* AustinForVeteransStartupWeekendUITests.swift */; };
-		3D83B63E215FE71200C68F56 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D83B63D215FE71200C68F56 /* GoogleService-Info.plist */; };
+		3D8BE050218D42BB00370451 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D8BE04F218D42BB00370451 /* GoogleService-Info.plist */; };
 		3D97D299216050F700EA954C /* toOpenSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D97D298216050F700EA954C /* toOpenSettingsViewController.swift */; };
 		A5EE1C18B89CAF52B917F307 /* Pods_AustinForVeteransStartupWeekend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CF774C1D5ADBE1A5E69BF09 /* Pods_AustinForVeteransStartupWeekend.framework */; };
 /* End PBXBuildFile section */
@@ -63,7 +63,7 @@
 		3D83B62B215FE15A00C68F56 /* AustinForVeteransStartupWeekendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AustinForVeteransStartupWeekendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D83B62F215FE15A00C68F56 /* AustinForVeteransStartupWeekendUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AustinForVeteransStartupWeekendUITests.swift; sourceTree = "<group>"; };
 		3D83B631215FE15A00C68F56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D83B63D215FE71200C68F56 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D8BE04F218D42BB00370451 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3D97D298216050F700EA954C /* toOpenSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = toOpenSettingsViewController.swift; sourceTree = "<group>"; };
 		476BC8AF70F95DB3583803FF /* Pods_AustinForVeteransStartupWeekendTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AustinForVeteransStartupWeekendTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AC17C0CCED7A7ADB58BDB75 /* Pods-AustinForVeteransStartupWeekend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AustinForVeteransStartupWeekend.release.xcconfig"; path = "Pods/Target Support Files/Pods-AustinForVeteransStartupWeekend/Pods-AustinForVeteransStartupWeekend.release.xcconfig"; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 				3D83B613215FE15900C68F56 /* Main.storyboard */,
 				3D83B616215FE15A00C68F56 /* Assets.xcassets */,
 				3D83B618215FE15A00C68F56 /* LaunchScreen.storyboard */,
-				3D83B63D215FE71200C68F56 /* GoogleService-Info.plist */,
+				3D8BE04F218D42BB00370451 /* GoogleService-Info.plist */,
 				3D83B61B215FE15A00C68F56 /* Info.plist */,
 				3D018F9D215FEBFF00B7A7F3 /* Artwork.swift */,
 				3D018F9F215FEC5D00B7A7F3 /* ArtworkViews.swift */,
@@ -295,7 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D83B61A215FE15A00C68F56 /* LaunchScreen.storyboard in Resources */,
-				3D83B63E215FE71200C68F56 /* GoogleService-Info.plist in Resources */,
+				3D8BE050218D42BB00370451 /* GoogleService-Info.plist in Resources */,
 				3D83B617215FE15A00C68F56 /* Assets.xcassets in Resources */,
 				3D83B615215FE15900C68F56 /* Main.storyboard in Resources */,
 			);
@@ -596,7 +596,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.george.HonorFlight;
+				PRODUCT_BUNDLE_IDENTIFIER = com.george.AustinInstitutions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -617,7 +617,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.george.HonorFlight;
+				PRODUCT_BUNDLE_IDENTIFIER = com.george.AustinInstitutions;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;

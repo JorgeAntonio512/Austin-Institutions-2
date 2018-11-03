@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w5F-Yn-hKs">
-    <device id="retina5_5" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w5F-Yn-hKs">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Honor Flight-->
+        <!--Map-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="MapkitViewController" customModule="AustinForVeteransStartupWeekend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ojD-W7-AdG">
-                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                                 <subviews>
                                     <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7a-Jy-5eV">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
                                         <items>
-                                            <navigationItem title="🇺🇸 Honor Flight 🇺🇸" id="HRZ-nk-q6U"/>
+                                            <navigationItem title="Austin Institutions" id="HRZ-nk-q6U"/>
                                         </items>
                                     </navigationBar>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="k0j-oP-gqi">
-                                        <rect key="frame" x="0.0" y="44" width="414" height="579"/>
+                                        <rect key="frame" x="0.0" y="50" width="320" height="317"/>
                                     </mapView>
                                 </subviews>
                             </stackView>
@@ -41,7 +41,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Honor Flight" image="plane" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="mapMarker" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="mapView" destination="k0j-oP-gqi" id="pqS-t2-ssg"/>
                         <outlet property="navBar" destination="v7a-Jy-5eV" id="g0g-hS-Sb7"/>
@@ -58,23 +58,23 @@
             <objects>
                 <viewController id="lPe-dP-PeB" customClass="toOpenSettingsViewController" customModule="AustinForVeteransStartupWeekend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jE6-ko-fzC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PjU-kM-jwS">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change your settings to use your current location on the map." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oR2-da-q60">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="ds9-Zx-eQS"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghl-35-mhA">
-                                        <rect key="frame" x="0.0" y="200" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="200" width="320" height="50"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings_icon" translatesAutoresizingMaskIntoConstraints="NO" id="aqa-VK-Vmk">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -84,15 +84,15 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Go to Settings." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eD1-G3-dYH">
-                                                <rect key="frame" x="50" y="0.0" width="364" height="50"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="50" y="0.0" width="270" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRR-tc-ZGL">
-                                        <rect key="frame" x="0.0" y="250" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="250" width="320" height="50"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="J4s-NR-Gew">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -102,15 +102,15 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Tap Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtK-lt-B65">
-                                                <rect key="frame" x="50" y="0.0" width="364" height="50"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="50" y="0.0" width="270" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSf-V5-tVT">
-                                        <rect key="frame" x="0.0" y="300" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="300" width="320" height="50"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="c4A-SU-TT6">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -120,22 +120,24 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Set &quot;Allow Location Access&quot; to &quot;While Using the App&quot;." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exW-G3-6I8">
-                                                <rect key="frame" x="50" y="0.0" width="364" height="50"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <rect key="frame" x="50" y="0.0" width="270" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SU-vW-0Uc">
-                                        <rect key="frame" x="0.0" y="350" width="414" height="161"/>
+                                        <rect key="frame" x="0.0" y="350" width="320" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="Open Settings"/>
                                         <connections>
                                             <action selector="buttonPressedWithSender:" destination="lPe-dP-PeB" eventType="touchUpInside" id="7Ek-Lw-2yu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUB-Uy-qeU">
-                                        <rect key="frame" x="0.0" y="511" width="414" height="161"/>
+                                        <rect key="frame" x="0.0" y="383" width="320" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="Close"/>
                                         <connections>
                                             <action selector="closePressedWithSender:" destination="lPe-dP-PeB" eventType="touchUpInside" id="GlW-GS-YwG"/>
@@ -171,14 +173,14 @@
             <objects>
                 <viewController id="du7-6T-CHM" customClass="EnableLocationSharingViewController" customModule="AustinForVeteransStartupWeekend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KZA-pd-v1G">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zUV-HI-1M2">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable location sharing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aho-ra-UhL">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="8ee-sW-hH0"/>
                                         </constraints>
@@ -187,33 +189,35 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This lets you see where all the Honor Flights are happening nearby!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMV-bd-FJ8">
-                                        <rect key="frame" x="0.0" y="100" width="414" height="100"/>
+                                        <rect key="frame" x="0.0" y="100" width="320" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="19L-ki-CSZ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oLx-iD-KAi">
-                                        <rect key="frame" x="0.0" y="200" width="414" height="472"/>
+                                        <rect key="frame" x="0.0" y="200" width="320" height="216"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UW1-ki-GHF">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F3A-iV-5KF">
-                                                <rect key="frame" x="0.0" y="50" width="414" height="120"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ah-GP-dVe">
-                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="120"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="120"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                         <state key="normal" title="Skip"/>
                                                         <connections>
                                                             <action selector="skipPressed:" destination="du7-6T-CHM" eventType="touchUpInside" id="ew9-2r-wg6"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywH-tG-l3i">
-                                                        <rect key="frame" x="207" y="0.0" width="207" height="120"/>
+                                                        <rect key="frame" x="160" y="0.0" width="160" height="120"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                         <state key="normal" title="Enable"/>
                                                         <connections>
                                                             <action selector="enablePressed:" destination="du7-6T-CHM" eventType="touchUpInside" id="qJ7-7w-0UG"/>
@@ -226,7 +230,7 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ihg-D8-2ll">
-                                                <rect key="frame" x="0.0" y="170" width="414" height="302"/>
+                                                <rect key="frame" x="0.0" y="120" width="320" height="96"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
@@ -260,108 +264,73 @@
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="AustinForVeteransStartupWeekend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="b7u-hi-NAf">
-                                <rect key="frame" x="0.0" y="64" width="414" height="623"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="olM-cj-zKs">
+                                <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="5o8-p9-KLe">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="124.66666666666667"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Hi there!                 " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lts-cI-z1j">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="124.66666666666667"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="48"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DQg-v2-brZ">
-                                        <rect key="frame" x="0.0" y="124.66666666666666" width="414" height="124.66666666666666"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="😀" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PPh-ug-oFk">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="124.66666666666667"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jz9-73-fqp">
-                                        <rect key="frame" x="0.0" y="249.33333333333334" width="414" height="124.33333333333334"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="🇺🇸" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4h8-NQ-zov">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="124.33333333333333"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="svB-ac-RO5">
-                                        <rect key="frame" x="0.0" y="373.66666666666669" width="414" height="124.66666666666669"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fif-fl-Cd6">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="124.66666666666667"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bse-L4-nFB">
-                                        <rect key="frame" x="0.0" y="498.33333333333343" width="414" height="124.66666666666669"/>
-                                        <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQZ-zo-6G4">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="124.66666666666667"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
-                                        </subviews>
-                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeE-AX-1RI">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <attributedString key="attributedText">
+                                            <fragment>
+                                                <mutableString key="content">Welcome!
+
+The purpose of this application is to provide directions to and info about various businesses in Austin, TX, that can be deemed "Austin Institutions".
+
+Generally speaking, with a very few exceptions, none of the businesses listed were started after the year 2000. Many of the businesses were started in the 50's, 60's, 70's, and 80's. 
+
+Please consider giving your patronage to these businesses. They are, by and large, what makes Austin Austin.
+
+
+How to use:
+
+Click on over to the "Map" tab. After giving the OK to use your current location, you should see the map, with markers on it (assuming you're in Austin). 
+
+When you click on any given marker, you should see an info window, with (from left to right) a blue "i" circle icon, a title and a brief description, and a map circle icon.
+
+Pressing the blue "i" circle icon will take you to either the business' website, or their Yelp page, whichever is more helpful. Pressing the map circle icon will take you to Apple Maps, giving you precise driving/biking/bus/rideshare directions to the location.</mutableString>
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="19" name=".AppleSystemUIFont"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="svB-ac-RO5" firstAttribute="height" secondItem="jz9-73-fqp" secondAttribute="height" id="Ylr-sv-yIt"/>
-                                    <constraint firstItem="bse-L4-nFB" firstAttribute="height" secondItem="svB-ac-RO5" secondAttribute="height" id="fNS-TY-9Rt"/>
-                                    <constraint firstItem="5o8-p9-KLe" firstAttribute="height" secondItem="jz9-73-fqp" secondAttribute="height" id="iXA-vd-3oW"/>
-                                    <constraint firstItem="DQg-v2-brZ" firstAttribute="height" secondItem="5o8-p9-KLe" secondAttribute="height" id="mQw-sg-HKL"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="b7u-hi-NAf" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="1uG-Hf-8no"/>
-                            <constraint firstItem="b7u-hi-NAf" firstAttribute="bottom" secondItem="O1u-W8-tvY" secondAttribute="bottom" id="EFg-wP-u4N"/>
-                            <constraint firstItem="b7u-hi-NAf" firstAttribute="trailing" secondItem="O1u-W8-tvY" secondAttribute="trailing" id="R8A-S8-IQO"/>
-                            <constraint firstItem="b7u-hi-NAf" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="v2E-Gy-AOc"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="olM-cj-zKs" secondAttribute="trailing" id="61w-GB-tse"/>
+                            <constraint firstItem="olM-cj-zKs" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="A0a-fG-1tr"/>
+                            <constraint firstItem="olM-cj-zKs" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="ATi-5t-mCh"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="olM-cj-zKs" secondAttribute="bottom" id="hPi-pO-3XQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Welcome!" image="handWave" id="cPa-gy-q4n"/>
-                    <connections>
-                        <outlet property="instructions" destination="TQZ-zo-6G4" id="Qbt-mR-H9N"/>
-                        <outlet property="thanks" destination="fif-fl-Cd6" id="pAU-gr-RXX"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1092" y="1461"/>
+            <point key="canvasLocation" x="-1094.2028985507247" y="1460.8695652173915"/>
         </scene>
         <!--Landing Page View Controller-->
         <scene sceneID="lby-5X-NTG">
             <objects>
                 <viewController id="w5F-Yn-hKs" customClass="landingPageViewController" customModule="AustinForVeteransStartupWeekend" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TQJ-dV-9Mb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Sqf-py-flh">
-                                <rect key="frame" x="0.0" y="20" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saluteWflag" translatesAutoresizingMaskIntoConstraints="NO" id="2FM-Sl-MU0">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
@@ -389,7 +358,7 @@
             <objects>
                 <navigationController id="4Ep-UX-i1A" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1qH-3E-bMq">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -424,8 +393,8 @@
         <image name="checkmark" width="200" height="173"/>
         <image name="handWave" width="25" height="25"/>
         <image name="location_arrow" width="310" height="310"/>
-        <image name="plane" width="25" height="25"/>
-        <image name="saluteWflag" width="4035" height="4125"/>
+        <image name="mapMarker" width="25" height="25"/>
+        <image name="saluteWflag" width="968.4000244140625" height="990"/>
         <image name="settings_icon" width="600" height="575"/>
     </resources>
     <inferredMetricsTieBreakers>
