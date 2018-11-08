@@ -13,6 +13,7 @@
 		3D018FA0215FEC5D00B7A7F3 /* ArtworkViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D018F9F215FEC5D00B7A7F3 /* ArtworkViews.swift */; };
 		3D01EC432194596B000BAF22 /* listViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01EC422194596B000BAF22 /* listViewController.swift */; };
 		3D01EC4521945B96000BAF22 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01EC4421945B96000BAF22 /* CustomTableViewCell.swift */; };
+		3D01EC47219463FE000BAF22 /* PeoplezProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01EC46219463FE000BAF22 /* PeoplezProfilesViewController.swift */; };
 		3D3E0A7E216057D6004F3462 /* EnableLocationSharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E0A7D216057D6004F3462 /* EnableLocationSharingViewController.swift */; };
 		3D4BF1E82162D190004FB33C /* landingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BF1E72162D190004FB33C /* landingPageViewController.swift */; };
 		3D83B60E215FE15900C68F56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83B60D215FE15900C68F56 /* AppDelegate.swift */; };
@@ -51,6 +52,7 @@
 		3D018F9F215FEC5D00B7A7F3 /* ArtworkViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkViews.swift; sourceTree = "<group>"; };
 		3D01EC422194596B000BAF22 /* listViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listViewController.swift; sourceTree = "<group>"; };
 		3D01EC4421945B96000BAF22 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		3D01EC46219463FE000BAF22 /* PeoplezProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplezProfilesViewController.swift; sourceTree = "<group>"; };
 		3D3E0A7D216057D6004F3462 /* EnableLocationSharingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableLocationSharingViewController.swift; sourceTree = "<group>"; };
 		3D4BF1E72162D190004FB33C /* landingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landingPageViewController.swift; sourceTree = "<group>"; };
 		3D83B60A215FE15900C68F56 /* AustinForVeteransStartupWeekend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AustinForVeteransStartupWeekend.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +151,7 @@
 				3D4BF1E72162D190004FB33C /* landingPageViewController.swift */,
 				3D83B60F215FE15900C68F56 /* MapkitViewController.swift */,
 				3D01EC422194596B000BAF22 /* listViewController.swift */,
+				3D01EC46219463FE000BAF22 /* PeoplezProfilesViewController.swift */,
 				3D01EC4421945B96000BAF22 /* CustomTableViewCell.swift */,
 				3D83B611215FE15900C68F56 /* SecondViewController.swift */,
 				3D83B613215FE15900C68F56 /* Main.storyboard */,
@@ -418,6 +421,7 @@
 				3D018FA0215FEC5D00B7A7F3 /* ArtworkViews.swift in Sources */,
 				3D83B60E215FE15900C68F56 /* AppDelegate.swift in Sources */,
 				3D4BF1E82162D190004FB33C /* landingPageViewController.swift in Sources */,
+				3D01EC47219463FE000BAF22 /* PeoplezProfilesViewController.swift in Sources */,
 				3D3E0A7E216057D6004F3462 /* EnableLocationSharingViewController.swift in Sources */,
 				3D01EC4521945B96000BAF22 /* CustomTableViewCell.swift in Sources */,
 				3D018F9E215FEBFF00B7A7F3 /* Artwork.swift in Sources */,

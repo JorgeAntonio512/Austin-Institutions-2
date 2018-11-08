@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "ingredients-list-icon--icon-search-engine-10.png",
+      "filename" : "ingredients-list-icon--icon-search-engine-10 copy 2.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "ingredients-list-icon--icon-search-engine-10 copy@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "ingredients-list-icon--icon-search-engine-10@3x.png",
       "scale" : "3x"
     }
   ],

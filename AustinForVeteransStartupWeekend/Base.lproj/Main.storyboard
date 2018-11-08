@@ -83,11 +83,40 @@
                     <tabBarItem key="tabBarItem" title="List" image="ingredients-list-icon--icon-search-engine-10" id="mAc-y2-1yz"/>
                     <connections>
                         <outlet property="tableView" destination="0Y1-eu-NVX" id="TO4-sh-KPf"/>
+                        <segue destination="yt4-sK-RAd" kind="show" identifier="toPeoplesProfiles" id="Eyq-yY-lji"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zxh-5c-mJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="119" y="807"/>
+        </scene>
+        <!--Peoplez Profiles View Controller-->
+        <scene sceneID="CTS-Wi-aGY">
+            <objects>
+                <viewController id="yt4-sK-RAd" customClass="PeoplezProfilesViewController" customModule="AustinForVeteransStartupWeekend" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x9F-hA-Wri">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="06u-hl-yK4">
+                                <rect key="frame" x="40" y="176" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="JPy-Vt-Y2x"/>
+                    </view>
+                    <connections>
+                        <outlet property="blurbb" destination="06u-hl-yK4" id="spo-CZ-Ley"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Jt-hI-reN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937" y="811"/>
         </scene>
         <!--To Open Settings View Controller-->
         <scene sceneID="zWF-zl-cpo">
@@ -429,7 +458,7 @@ Pressing the blue "i" circle icon will take you to the business' Yelp page. Pres
     <resources>
         <image name="checkmark" width="200" height="173"/>
         <image name="handWave" width="25" height="25"/>
-        <image name="ingredients-list-icon--icon-search-engine-10" width="20.803611755371094" height="20.803611755371094"/>
+        <image name="ingredients-list-icon--icon-search-engine-10" width="2" height="2"/>
         <image name="location_arrow" width="310" height="310"/>
         <image name="mapMarker" width="25" height="25"/>
         <image name="saluteWflag" width="4000" height="3000"/>

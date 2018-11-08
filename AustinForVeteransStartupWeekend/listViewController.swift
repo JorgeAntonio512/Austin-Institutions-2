@@ -14,6 +14,9 @@ class listViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet var tableView: UITableView!
     
+    var listArray = [ [String: Any] ]()
+    var blurb:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let navigationTitleFont = UIFont(name: "AvenirNext-Regular", size: 18)!
@@ -61,7 +64,7 @@ class listViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
-    var listArray = [ [String: Any] ]()
+   
     
     
     
@@ -119,8 +122,44 @@ class listViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tableView.reloadData()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let dict = self.listArray[indexPath.row]
+       
+        blurb = dict["blurb"] as? String
+//        yourRelStatus = dict["status"] as? String
+//        yourGender = dict["gender"] as? String
+//        yourHeight = dict["height"] as? String
+//        yourZip = dict["city"] as? String
+//        yourAbout = dict["about"] as? String
+//        yourProPic = dict["profileImageURL"] as? String
+//        let islandRef = Storage.storage().reference(forURL: yourProPic!)
+//        // Download in memory with a maximum allowed size of 1MB (1 * 1024 * 1024 bytes)
+//        islandRef.getData(maxSize: 10 * 1024 * 1024) { data, error in
+//            if let error = error {
+//                // Uh-oh, an error occurred!
+//            } else {
+//                // Data for "images/island.jpg" is returned
+//                let image = UIImage(data: data!)
+//
+//                let user = User.init(name: self.yourValue as! String, email: self.yourHeight as! String, id: self.keyzy!, profilePic: image!)
+//                self.selectedUser = user
+                self.performSegue(withIdentifier: "toPeoplesProfiles", sender: self)
+//
+//            }
+//
+//        }
+        
+    }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if(segue.identifier == "toPeoplesProfiles") {
+            let vc = segue.destination as! PeoplezProfilesViewController
+            vc.blurbz = blurb!
+            
+        }
+    }
     
     
     
