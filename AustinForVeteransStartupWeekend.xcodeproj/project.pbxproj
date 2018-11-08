@@ -11,6 +11,8 @@
 		3930E63EC9CAE4A021177850 /* Pods_AustinForVeteransStartupWeekendTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476BC8AF70F95DB3583803FF /* Pods_AustinForVeteransStartupWeekendTests.framework */; };
 		3D018F9E215FEBFF00B7A7F3 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D018F9D215FEBFF00B7A7F3 /* Artwork.swift */; };
 		3D018FA0215FEC5D00B7A7F3 /* ArtworkViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D018F9F215FEC5D00B7A7F3 /* ArtworkViews.swift */; };
+		3D01EC432194596B000BAF22 /* listViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01EC422194596B000BAF22 /* listViewController.swift */; };
+		3D01EC4521945B96000BAF22 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01EC4421945B96000BAF22 /* CustomTableViewCell.swift */; };
 		3D3E0A7E216057D6004F3462 /* EnableLocationSharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E0A7D216057D6004F3462 /* EnableLocationSharingViewController.swift */; };
 		3D4BF1E82162D190004FB33C /* landingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BF1E72162D190004FB33C /* landingPageViewController.swift */; };
 		3D83B60E215FE15900C68F56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83B60D215FE15900C68F56 /* AppDelegate.swift */; };
@@ -47,6 +49,8 @@
 		3CF774C1D5ADBE1A5E69BF09 /* Pods_AustinForVeteransStartupWeekend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AustinForVeteransStartupWeekend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D018F9D215FEBFF00B7A7F3 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		3D018F9F215FEC5D00B7A7F3 /* ArtworkViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkViews.swift; sourceTree = "<group>"; };
+		3D01EC422194596B000BAF22 /* listViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listViewController.swift; sourceTree = "<group>"; };
+		3D01EC4421945B96000BAF22 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		3D3E0A7D216057D6004F3462 /* EnableLocationSharingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableLocationSharingViewController.swift; sourceTree = "<group>"; };
 		3D4BF1E72162D190004FB33C /* landingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landingPageViewController.swift; sourceTree = "<group>"; };
 		3D83B60A215FE15900C68F56 /* AustinForVeteransStartupWeekend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AustinForVeteransStartupWeekend.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +148,8 @@
 				3D83B60D215FE15900C68F56 /* AppDelegate.swift */,
 				3D4BF1E72162D190004FB33C /* landingPageViewController.swift */,
 				3D83B60F215FE15900C68F56 /* MapkitViewController.swift */,
+				3D01EC422194596B000BAF22 /* listViewController.swift */,
+				3D01EC4421945B96000BAF22 /* CustomTableViewCell.swift */,
 				3D83B611215FE15900C68F56 /* SecondViewController.swift */,
 				3D83B613215FE15900C68F56 /* Main.storyboard */,
 				3D83B616215FE15A00C68F56 /* Assets.xcassets */,
@@ -381,6 +387,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-AustinForVeteransStartupWeekend/Pods-AustinForVeteransStartupWeekend-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -389,6 +396,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -406,10 +414,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D83B612215FE15900C68F56 /* SecondViewController.swift in Sources */,
+				3D01EC432194596B000BAF22 /* listViewController.swift in Sources */,
 				3D018FA0215FEC5D00B7A7F3 /* ArtworkViews.swift in Sources */,
 				3D83B60E215FE15900C68F56 /* AppDelegate.swift in Sources */,
 				3D4BF1E82162D190004FB33C /* landingPageViewController.swift in Sources */,
 				3D3E0A7E216057D6004F3462 /* EnableLocationSharingViewController.swift in Sources */,
+				3D01EC4521945B96000BAF22 /* CustomTableViewCell.swift in Sources */,
 				3D018F9E215FEBFF00B7A7F3 /* Artwork.swift in Sources */,
 				3D97D299216050F700EA954C /* toOpenSettingsViewController.swift in Sources */,
 				3D83B610215FE15900C68F56 /* MapkitViewController.swift in Sources */,

@@ -18,16 +18,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ojD-W7-AdG">
-                                <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                                 <subviews>
                                     <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v7a-Jy-5eV">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <items>
                                             <navigationItem title="Austin Institutions" id="HRZ-nk-q6U"/>
                                         </items>
                                     </navigationBar>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="k0j-oP-gqi">
-                                        <rect key="frame" x="0.0" y="50" width="320" height="317"/>
+                                        <rect key="frame" x="0.0" y="44" width="320" height="367"/>
                                     </mapView>
                                 </subviews>
                             </stackView>
@@ -53,6 +53,42 @@
             </objects>
             <point key="canvasLocation" x="631" y="-127"/>
         </scene>
+        <!--List-->
+        <scene sceneID="qW3-ld-n4b">
+            <objects>
+                <viewController id="d4d-zN-NkA" customClass="listViewController" customModule="AustinForVeteransStartupWeekend" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SfH-EP-FHA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="o6M-eU-Du0">
+                                <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0Y1-eu-NVX">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="o6M-eU-Du0" firstAttribute="leading" secondItem="uHx-Wa-DKg" secondAttribute="leading" id="RIc-7a-e6d"/>
+                            <constraint firstItem="uHx-Wa-DKg" firstAttribute="trailing" secondItem="o6M-eU-Du0" secondAttribute="trailing" id="bPQ-zE-DDO"/>
+                            <constraint firstItem="uHx-Wa-DKg" firstAttribute="bottom" secondItem="o6M-eU-Du0" secondAttribute="bottom" id="pb8-Of-bNS"/>
+                            <constraint firstItem="o6M-eU-Du0" firstAttribute="top" secondItem="uHx-Wa-DKg" secondAttribute="top" id="tWy-3t-KF4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uHx-Wa-DKg"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="List" image="ingredients-list-icon--icon-search-engine-10" id="mAc-y2-1yz"/>
+                    <connections>
+                        <outlet property="tableView" destination="0Y1-eu-NVX" id="TO4-sh-KPf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zxh-5c-mJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="807"/>
+        </scene>
         <!--To Open Settings View Controller-->
         <scene sceneID="zWF-zl-cpo">
             <objects>
@@ -62,7 +98,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PjU-kM-jwS">
-                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change your settings to use your current location on the map." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oR2-da-q60">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
@@ -128,7 +164,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SU-vW-0Uc">
-                                        <rect key="frame" x="0.0" y="350" width="320" height="33"/>
+                                        <rect key="frame" x="0.0" y="350" width="320" height="55"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="Open Settings"/>
                                         <connections>
@@ -136,7 +172,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUB-Uy-qeU">
-                                        <rect key="frame" x="0.0" y="383" width="320" height="33"/>
+                                        <rect key="frame" x="0.0" y="405" width="320" height="55"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="Close"/>
                                         <connections>
@@ -177,7 +213,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zUV-HI-1M2">
-                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable location sharing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aho-ra-UhL">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
@@ -198,14 +234,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oLx-iD-KAi">
-                                        <rect key="frame" x="0.0" y="200" width="320" height="216"/>
+                                        <rect key="frame" x="0.0" y="200" width="320" height="260"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UW1-ki-GHF">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F3A-iV-5KF">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                                                <rect key="frame" x="0.0" y="44" width="320" height="120"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ah-GP-dVe">
                                                         <rect key="frame" x="0.0" y="0.0" width="160" height="120"/>
@@ -230,7 +266,7 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ihg-D8-2ll">
-                                                <rect key="frame" x="0.0" y="120" width="320" height="96"/>
+                                                <rect key="frame" x="0.0" y="164" width="320" height="96"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
@@ -268,14 +304,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="olM-cj-zKs">
-                                <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeE-AX-1RI">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="411"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <mutableString key="content">Welcome!
+                                                <string key="content">Welcome!
 
 The purpose of this application is to provide directions to and info about various businesses in Austin, TX, that can be deemed "Austin Institutions".
 
@@ -290,7 +326,7 @@ Click on over to the "Map" tab. After giving the OK to use your current location
 
 When you click on any given marker, you should see an info window, with (from left to right) a blue "i" circle icon, a title and a brief description, and a map circle icon.
 
-Pressing the blue "i" circle icon will take you to either the business' website, or their Yelp page, whichever is more helpful. Pressing the map circle icon will take you to Apple Maps, giving you precise driving/biking/bus/rideshare directions to the location.</mutableString>
+Pressing the blue "i" circle icon will take you to the business' Yelp page. Pressing the map circle icon will take you to Apple Maps, giving you precise driving/biking/bus/rideshare directions to the location.</string>
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="19" name=".AppleSystemUIFont"/>
@@ -358,7 +394,7 @@ Pressing the blue "i" circle icon will take you to either the business' website,
             <objects>
                 <navigationController id="4Ep-UX-i1A" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1qH-3E-bMq">
-                        <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -382,6 +418,7 @@ Pressing the blue "i" circle icon will take you to either the business' website,
                     <connections>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="d4d-zN-NkA" kind="relationship" relationship="viewControllers" id="9uo-UH-huM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -392,12 +429,13 @@ Pressing the blue "i" circle icon will take you to either the business' website,
     <resources>
         <image name="checkmark" width="200" height="173"/>
         <image name="handWave" width="25" height="25"/>
+        <image name="ingredients-list-icon--icon-search-engine-10" width="20.803611755371094" height="20.803611755371094"/>
         <image name="location_arrow" width="310" height="310"/>
         <image name="mapMarker" width="25" height="25"/>
-        <image name="saluteWflag" width="968.4000244140625" height="990"/>
+        <image name="saluteWflag" width="4000" height="3000"/>
         <image name="settings_icon" width="600" height="575"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kUP-c3-l2r"/>
+        <segue reference="h9z-4p-ESu"/>
     </inferredMetricsTieBreakers>
 </document>
