@@ -78,26 +78,26 @@ class listViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         cell.separatorInset = .zero
         cell.accessoryType = .disclosureIndicator
-       // cell.imageView?.image = #imageLiteral(resourceName: "notthere")
+        cell.imageView?.image = #imageLiteral(resourceName: "notthere")
         let userDict = self.listArray[indexPath.row]
         
         
-//        let url = URL(string: userDict["profileImageURL"] as! String)
-//        let imagur = #imageLiteral(resourceName: "notthere")
-//        cell.imageView?.kf.setImage(with: url, placeholder: imagur, completionHandler: {
-//            (image, error, cacheType, imageUrl) in
-//            if let error = error {
-//                // Uh-oh, an error occurred!
-//            } else {
-//            }
-//            // image: Image? `nil` means failed
-//            // error: NSError? non-`nil` means failed
-//            // cacheType: CacheType
-//            //                  .none - Just downloaded
-//            //                  .memory - Got from memory cache
-//            //                  .disk - Got from disk cache
-//            // imageUrl: URL of the image
-//        })
+        let url = URL(string: userDict["profileImageURL"] as! String)
+        let imagur = #imageLiteral(resourceName: "notthere")
+        cell.imageView?.kf.setImage(with: url, placeholder: imagur, completionHandler: {
+            (image, error, cacheType, imageUrl) in
+            if let error = error {
+                // Uh-oh, an error occurred!
+            } else {
+            }
+            // image: Image? `nil` means failed
+            // error: NSError? non-`nil` means failed
+            // cacheType: CacheType
+            //                  .none - Just downloaded
+            //                  .memory - Got from memory cache
+            //                  .disk - Got from disk cache
+            // imageUrl: URL of the image
+        })
         
         
         

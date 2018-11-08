@@ -340,7 +340,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <attributedString key="attributedText">
                                             <fragment>
-                                                <string key="content">Welcome!
+                                                <mutableString key="content">Welcome!
 
 The purpose of this application is to provide directions to and info about various businesses in Austin, TX, that can be deemed "Austin Institutions".
 
@@ -355,7 +355,9 @@ Click on over to the "Map" tab. After giving the OK to use your current location
 
 When you click on any given marker, you should see an info window, with (from left to right) a blue "i" circle icon, a title and a brief description, and a map circle icon.
 
-Pressing the blue "i" circle icon will take you to the business' Yelp page. Pressing the map circle icon will take you to Apple Maps, giving you precise driving/biking/bus/rideshare directions to the location.</string>
+Pressing the blue "i" circle icon will take you to the business' Yelp page. Pressing the map circle icon will take you to Apple Maps, giving you precise driving/biking/bus/rideshare directions to the location.
+
+The "List" tab provides a list of the ten institutions closest to you, based on your location. Clicking on any of them will take you to a page with a blurb about why they are considered an Austin Institution.</mutableString>
                                                 <attributes>
                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                     <font key="NSFont" size="19" name=".AppleSystemUIFont"/>
