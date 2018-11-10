@@ -38,7 +38,7 @@ class listViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         
         
-        let ref = Database.database().reference().child("markers")
+        let ref = Database.database().reference().child("markers").queryOrdered(byChild: "title")
         
         ref.observeSingleEvent(of: .value, with: { snapshot in
             
