@@ -8,6 +8,11 @@ See it on the App Store!: https://apps.apple.com/us/app/austin-institutions/id14
 
 
 <p align="center">
-  <img src="https://github.com/JorgeAntonio512/Austin-Institutions-2/blob/master/IMG_2898.PNG?raw=true" width="350" title="hover text">
-  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
+  <img src="https://github.com/JorgeAntonio512/Austin-Institutions-2/blob/master/IMG_2898.PNG?raw=true" width="350" title="splash screen">
+  <img src="https://github.com/JorgeAntonio512/Austin-Institutions-2/blob/master/IMG_2899.PNG
+" width="350" title="map view">
+  <img src="https://github.com/JorgeAntonio512/Austin-Institutions-2/blob/master/IMG_2900.PNG
+" width="350" title="specific location">
+  <img src="https://github.com/JorgeAntonio512/Austin-Institutions-2/blob/master/IMG_2901.PNG
+" width="350" title="list view">
 </p>
